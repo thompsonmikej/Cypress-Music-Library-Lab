@@ -23,3 +23,14 @@ describe('User story #2. Search/filter function to display the added record', ()
     cy.should('be.visible')
   })
 })
+
+
+describe('User story #3. Delete the record that I just added', () => {
+  it('Find duplicate elements of my table to find the correct row and then trigger the “delete” button', () => {
+    cy.visit('http://localhost:3000/')
+    cy.wait(999) // Hint: You may need to add the.wait(nnn) command to create a delay.
+    cy.get('[data-cy="submit"]').first()
+    cy.contains('Delete Song').click()
+    
+  })
+})
