@@ -11,3 +11,15 @@ describe('User story #1. Add a song into the DB as an end user would', () => {
   })
 })
 
+
+describe('User story #2. Search/filter function to display the added record', () => {
+  it('Navigates search results in the table and asserts that the record/data exists', () => {
+    cy.visit('http://localhost:3000/')
+    cy.wait(999) // Hint: You may need to add the.wait(nnn) command to create a delay.
+    cy.get(':nth-child(4) > input').type('Gangstas Paradise').not('Gangsters Paradise') // Navigate the search results in the table
+    cy.get('.formDiv > form > [name="title"]').not('null')
+    cy.get('.formDiv > form > [name="title"]').not('to.be.undefined')
+    cy.should('exist') // Assert that the record / data exists.
+    cy.should('be.visible')
+  })
+})
