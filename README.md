@@ -1,6 +1,12 @@
-Cypress Music Library lab
+# Cypress Music Library lab
 
-I was tasked to write a script simulating a user logging into the site, entering a song, and subsequently deleting the same entry. 
+Michael wrote a script, performing end-to-end (E2E) testing, to simulate a user logging into a music app, entering a song, and deleting the same entry. 
 
-I performed end-to-end (E2E) testing on a completed music library app. By the test sequence passing, I am assured that the functionality of the music library that the end user would expect is consistent and operable.
+## Frameworks
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
+## Testing
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e) 
+
+## Other
+![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
